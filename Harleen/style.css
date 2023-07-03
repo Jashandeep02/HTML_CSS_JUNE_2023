@@ -49,13 +49,13 @@
 
 .login-box {
     width: 400px;
-    min-height: 400px;
+    min-height: 300px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 8px rgb(0, 0, 0);
     padding: 15px;
     text-align: center;
-    align-items: center;
+    align-items: left;
 }
 
 main {
@@ -75,13 +75,14 @@ main {
 }
 
 .register-box {
-    width: 800px;
+    width: 600px;
     min-height: 300px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 8px rgb(0, 0, 0);
     padding: 15px;
-    text-align: center;
+    text-align: left;
+    margin-top: 200px;
 }
 
 .table {
@@ -176,6 +177,7 @@ main {
 .one{
     font-size: xx-large;
 }
-.fa-brands{
 
+.input-box{
+    width: 100%;
 }
