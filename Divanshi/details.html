@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        
+         function logout() {
+    var confirmLogout = confirm("Are you sure you want to logout?");
+    if (confirmLogout) {
+      window.location.href = "home.html"; // Replace "home.html" with the actual home page URL
+    }
+  }
+    </script>
+    <style>
+        .container{
+            margin: 0 80px;
+        }
+        @keyframes fade-in{
+            0%{
+                opacity:0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        tr {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <nav class="navbar">
+        <div class="logo">
+          <img  style="border: 30px gray"   src="data:image/png;base64,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" alt="Logo" width="150px">
+        </div>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="details.html">Employees</a>
+          <button onclick="logout()">Logout</button>
+        </div>
+      </nav>
+      
+       </div>
+       <div style="text-align: center;">
+    <h1>Employee Details</h1>
+    </div>
+    <div class="container">
+    <table align="center" border="1" cellspacing="0" cellpadding="5" >
+        <tr>
+            <th>Employee Name</th>
+            <th>Post</th>
+            <th>Years of Experience</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Sebastian Labrador</td>
+            <td>VP of delivery for CG infinity</td>
+            <td>15</td>
+            <td>Texas</td>
+        </tr>
+        <tr>
+            <td>Bill Wachel</td>
+            <td>Technology CISO SVP</td>
+            <td>20</td>
+            <td>Texas</td>
+            
+        </tr>
+        <tr>
+            <td>Jeremy Leonard</td>
+            <td>Digital Marketing</td>
+            <td>16</td>
+            <td>Texas</td>
+        </tr>
+        <tr>
+            <td>Reed Hein</td>
+            <td>Recruiter</td>
+            <td>15</td>
+            <td>Kansas</td>
+        </tr>
+        <tr>
+            
+            <td>Tanya Shepherd</td>
+            <td>VP of delivery</td>
+            <td>12</td>
+            <td>Texas</td>
+        </tr>
+        <tr>
+            
+            <td>Terrence George</td>
+            <td>Global IT project lead</td>
+            <td>17</td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            
+            <td>Kaden</td>
+            <td>developer</td>
+            <td>18</td>
+            <td>New Mexico</td>
+        </tr>
+        
+        
+        
+        <!-- Add more rows for other employees -->
+    </table>
+    </div>
+    <hr>
+<h2 style="text-align: center;">Where to find Us?</h2>
+    <div style="margin: 20px;display:flex;">
+        <div style="margin: 20px;">
+    <!-- <h2 style="text-align: center;">Where to find Us?</h2> -->
+    <h3>India Office</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.7398274827547!2d77.31749457437681!3d28.57757433657638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce45a79d0f4b9%3A0x8865fb53ffb94e5a!2sPinnacle%20Business%20Park!5e0!3m2!1sen!2sin!4v1688213742703!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div style="margin: 20px;">
+    <h3>Texas office</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65333844.56919485!2d-96.5804885053111!3d1.8840677388571387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c3e929e211197%3A0x12638de2592727d2!2sCG%20Infinity%2C%20Inc.!5e0!3m2!1sen!2sin!4v1688214620913!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+<div class="container-fluid my-5 >
+    <!-- Footer -->
+    <footer
+            class=" fixed-bottom text-lg-start text-dark"
+            style="background-color:#D8D8D8"
+            >
+      <!-- Section: Social media -->
+      <section
+               class="d-flex justify-content-between p-4 text-white"
+               style="background-color: #B0C4DE"
+               >
+        <!-- Left -->
+        <div class="me-5">
+          <span >Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+  
+        <!-- Right -->
+        <div>
+          <a href="https://www.facebook.com/cginfinityinc/" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/search?q=cg%20infinity&src=typed_query" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.google.com/search?q=cg+infinity&rlz=1C1GCEU_enIN1063IN1063&oq=cg+infinity&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg80gEIMzA1MmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="https://www.instagram.com/cginfinityinc/?hl=en" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/cginfinity/mycompany/" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/cybergroupdevs" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h2 class="text-uppercase fw-bold">Cg Infinity</h2>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                Our people-first approach to technology offers best-in-class service and success rates.
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Our expertise</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <a href="#!" class="text-dark">Financial Solutions</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Energy + Utilities</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Salesforce Solutions</a>
+              </p>
+              <p>
+                <!-- <a href="#!" class="text-dark">Bootstrap Angular</a> -->
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Services</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <a href="#!" class="text-dark">Cloud Data/Analytics//AI</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Cloud/Web Development</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Salesforce</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Customer Experience</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i> Sector-3 , Noida</p>
+              <p><i class="fas fa-envelope mr-3"></i> cginfinity.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2023 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/"
+           >CG Infinity</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+</body>
+</html>

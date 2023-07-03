@@ -1,0 +1,25 @@
+>>Home page
+The home page has the following components-
+1.Navbar- if we hover on the navbar it's color changes.On clicking on any of the links present on the navbar we 
+can navigate to that respective page.
+>>The navbar has a logout button which works for all the pages except the home page since it lands  there only.On
+clicking on the logout button we get a dialog box saying "are you sure you want to log out?"
+2.Let's get started button-on hovering this button we get two more buttons saying login and resgister
+which will take us to that respective page.
+3.cards-these cards tell us more about the company and the know more button takes us to the 
+employee detail page.
+4.Footer Section-the footer section has the social media links , on clicking these icons we gan to  that
+social media page of that company.
+
+>>Login Page.
+>>On filling the details in the login form the form resets, and if you click on the cancel button it takes you to the
+home page.
+
+>>Registration form
+the form has validations-you can not submit the form empty,on clicking the register button we get
+a dialog box saying registration successful and when we click on ok the form resets.
+
+>>Employee detail page
+The page consiste os details of employee working in cg, theres a slight animation effect
+on the top row of the table in blue.
+>>There is an embedded google map of the company's address,which you can see on clicking it.
